@@ -29,9 +29,10 @@ namespace SpeechServer1
         }
         public void Listen()
         {
+            Console.WriteLine("Serving port :{0}", _port);
             _listener.Start();
 
-            Task listenTask = HandleIncoming();
+            var listenTask = HandleIncoming();
             listenTask.GetAwaiter().GetResult();
 
             _listener.Close();
@@ -39,9 +40,7 @@ namespace SpeechServer1
 
         async Task HandleIncoming()
         {
-            bool runServer = true;
-
-            while (runServer)
+            while (true)
             {
                 var ctx = await _listener.GetContextAsync();
                 var req = ctx.Request;

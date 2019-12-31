@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70642a6c-3f7d-4fc4-81ca-099faa4fe2a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/SpeechServer1.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/bin/Debug/SpeechServer1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/bin/Debug/SpeechServer1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/bin/Debug/res.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/SpeechServer1.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/SpeechServer1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/SpeechServer1.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/SpeechServer1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/SpeechServer1.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeechServer1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/Program.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,20 +15,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpeechServer1/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+            <state relative-caret-position="344">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
               <folding>
-                <marker date="1577750175011" expanded="true" signature="6:146" ph="..." />
-                <marker date="1577750175011" expanded="true" signature="171:2935" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="190:2706" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="349:783" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="449:507" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="812:993" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="1030:2700" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="1106:2690" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="1382:2608" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="1681:1847" ph="{...}" />
-                <marker date="1577750175011" expanded="true" signature="1912:2082" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="6:146" ph="..." />
+                <marker date="1577750606657" expanded="true" signature="171:2952" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="190:2723" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="349:783" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="449:507" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="812:1051" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="1088:2717" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="1123:2707" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="1399:2625" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="1698:1864" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="1929:2099" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="2751:2950" ph="{...}" />
+                <marker date="1577750606657" expanded="true" signature="2804:2944" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -184,12 +166,12 @@
       <updated>1577735332289</updated>
       <workItem from="1577735334262" duration="1202000" />
       <workItem from="1577736554504" duration="76000" />
-      <workItem from="1577736645127" duration="12486000" />
+      <workItem from="1577736645127" duration="13314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13764000" />
+    <option name="totallyTimeSpent" value="14592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -207,10 +189,10 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25519446" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32946146" />
+      <window_info active="true" anchor="bottom" id="Build" visible="true" weight="0.32946146" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,20 +262,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SpeechServer1/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
+        <state relative-caret-position="344">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
           <folding>
-            <marker date="1577750175011" expanded="true" signature="6:146" ph="..." />
-            <marker date="1577750175011" expanded="true" signature="171:2935" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="190:2706" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="349:783" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="449:507" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="812:993" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="1030:2700" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="1106:2690" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="1382:2608" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="1681:1847" ph="{...}" />
-            <marker date="1577750175011" expanded="true" signature="1912:2082" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="6:146" ph="..." />
+            <marker date="1577750606657" expanded="true" signature="171:2952" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="190:2723" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="349:783" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="449:507" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="812:1051" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="1088:2717" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="1123:2707" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="1399:2625" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="1698:1864" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="1929:2099" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="2751:2950" ph="{...}" />
+            <marker date="1577750606657" expanded="true" signature="2804:2944" ph="{...}" />
           </folding>
         </state>
       </provider>
