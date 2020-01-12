@@ -10,8 +10,8 @@ namespace SpeechServer1
 {
     class Server
     {
-        readonly HttpListener _listener;
-        readonly SpeechSynthesizer _engine;
+        private readonly HttpListener _listener;
+        private readonly SpeechSynthesizer _engine;
         private readonly int _port = 8080;
 
         public Server()
@@ -20,13 +20,23 @@ namespace SpeechServer1
             {
                 _port = port;
             }
-            
+
             _listener = new HttpListener();
-            var url = $"http://127.0.0.1:{_port}/";
-            _listener.Prefixes.Add(url);
+            _listener.IgnoreWriteExceptions = true;
+            String[] urls =
+            {
+                $"http://+:{_port}/",
+                //$"http://127.0.0.1:{_port}/"
+            };
+            foreach (var url in urls)
+            {
+                _listener.Prefixes.Add(url);
+            }
+
             _engine = new SpeechSynthesizer();
             _engine.SelectVoice("ELAN TTS Russian (Nicolai 16Khz)");
         }
+
         public void Listen()
         {
             Console.WriteLine("Serving port :{0}", _port);
@@ -58,12 +68,13 @@ namespace SpeechServer1
                     if (Int32.TryParse(qRate, out var rate))
                     {
                         if (rate < 0) rate = 0;
-                        if (rate > 10) rate = 10;                        
+                        if (rate > 10) rate = 10;
                     }
+
                     if (Int32.TryParse(qVolume, out var volume))
                     {
                         if (volume < 1) volume = 1;
-                        if (volume > 100) volume = 100;                  
+                        if (volume > 100) volume = 100;
                     }
 
                     var tempStream = new MemoryStream();
@@ -73,6 +84,7 @@ namespace SpeechServer1
                     _engine.Speak(phrase);
 
                     res.ContentLength64 = tempStream.Length;
+                    res.KeepAlive = true;
                     var bytes = tempStream.ToArray();
                     await res.OutputStream.WriteAsync(bytes, 0, bytes.Length);
                     res.Close();
