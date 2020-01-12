@@ -59,7 +59,6 @@ namespace SpeechServer1
 
                 if (req.Url.AbsolutePath == "/say")
                 {
-                    res.ContentType = "audio/wav";
 
                     var phrase = Uri.UnescapeDataString(q.Get("q"));
                     var qRate = q.Get("rate");
@@ -78,15 +77,18 @@ namespace SpeechServer1
                     }
 
                     var tempStream = new MemoryStream();
-                    _engine.SetOutputToWaveStream(tempStream);
                     _engine.Volume = volume;
                     _engine.Rate = rate;
+                    _engine.SetOutputToWaveStream(tempStream);
                     _engine.Speak(phrase);
 
-                    res.ContentLength64 = tempStream.Length;
-                    res.KeepAlive = true;
+                    tempStream.Seek(0, SeekOrigin.Begin);
                     var bytes = tempStream.ToArray();
-                    await res.OutputStream.WriteAsync(bytes, 0, bytes.Length);
+                    res.ContentLength64 = bytes.Length;
+                    res.ContentType = "audio/wav";
+                    res.SendChunked = true;
+                    res.KeepAlive = false;
+                    res.OutputStream.Write(bytes, 0, bytes.Length);
                     res.Close();
                     continue;
                 }
