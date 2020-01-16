@@ -56,7 +56,11 @@ namespace SpeechServer1
                 var req = ctx.Request;
                 var res = ctx.Response;
                 var q = HttpUtility.ParseQueryString(req.Url.Query);
-
+                if (req.Headers.Get("range") != null)
+                {
+                    continue;
+                }
+                
                 if (req.Url.AbsolutePath == "/say")
                 {
 
