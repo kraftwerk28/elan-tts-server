@@ -6,6 +6,7 @@
     <e p="C:\Users\kraftwerk28\Projects\CSharp\SpeechServer1" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="SpeechServer1" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="packages.config" t="Include" />
