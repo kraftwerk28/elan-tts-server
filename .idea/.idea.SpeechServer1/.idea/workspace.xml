@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70642a6c-3f7d-4fc4-81ca-099faa4fe2a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SpeechServer1/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="70642a6c-3f7d-4fc4-81ca-099faa4fe2a1" name="Default Changelist" comment="Fixed unexpected server faults">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechServer1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpeechServer1/Server.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/Server.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechServer1/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/Service.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechServer1/SpeechServer1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/SpeechServer1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpeechServer1/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/SpeechServer1/packages.config" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpeechServer1/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="209">
               <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <marker date="1587913827314" expanded="true" signature="6:85" ph="..." />
@@ -51,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpeechServer1/Service.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="323">
               <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
                 <marker date="1586624303675" expanded="false" signature="6:151" ph="..." />
@@ -69,27 +63,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpeechServer1/Server.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="149" column="24" lean-forward="true" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+            <state relative-caret-position="1799">
+              <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
               <folding>
-                <marker date="1587921135021" expanded="true" signature="6:287" ph="..." />
-                <marker date="1587921135021" expanded="true" signature="312:5002" ph="{...}" />
-                <marker date="1587921135021" expanded="false" signature="341:1070" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="972:1064" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="1095:5000" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="1207:1323" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="1540:2400" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="1638:1696" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="2430:2577" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="2616:3103" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="2678:3093" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="2712:2947" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="2983:3079" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="3165:4916" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="3408:3661" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="3796:4846" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="4035:4132" ph="{...}" />
-                <marker date="1587921135021" expanded="true" signature="4944:4994" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="6:287" ph="..." />
+                <marker date="1587976139220" expanded="true" signature="312:5309" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="341:1070" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="972:1064" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="1095:5307" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="1207:1323" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="1540:2400" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="1638:1696" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="2430:2577" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="2616:3182" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="2678:3172" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="2777:2943" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="2979:3158" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="3244:5223" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="3487:3764" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="3904:5153" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="4118:4257" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="4318:4415" ph="{...}" />
+                <marker date="1587976139220" expanded="true" signature="5251:5301" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -152,20 +147,6 @@
     <panes>
       <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="SpeechServer1" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="SpeechServer1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="SpeechServer1" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="AssemblyExplorer" />
@@ -248,7 +229,8 @@
       <workItem from="1586024093112" duration="2714000" />
       <workItem from="1586028477760" duration="396000" />
       <workItem from="1586620390759" duration="5745000" />
-      <workItem from="1587900985751" duration="7300000" />
+      <workItem from="1587900985751" duration="7588000" />
+      <workItem from="1587974550714" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="release(2.0.0): new request contract">
       <created>1585062095010</created>
@@ -257,11 +239,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585062095010</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed unexpected server faults">
+      <created>1587921521135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587921521135</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed unexpected server faults">
+      <created>1587921559379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587921559379</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63849000" />
+    <option name="totallyTimeSpent" value="65995000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,12 +272,12 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23122004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23388386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35374868" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35374868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -294,7 +290,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" weight="0.32946146" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32946146" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.32946146" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" visible="true" weight="0.32946146" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -337,7 +333,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <MESSAGE value="release(2.0.0): new request contract" />
-    <option name="LAST_COMMIT_MESSAGE" value="release(2.0.0): new request contract" />
+    <MESSAGE value="Fixed unexpected server faults" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed unexpected server faults" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,9 +837,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.idea.SpeechServer1/.idea/contentModel.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpeechServer1/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <marker date="1587913827314" expanded="true" signature="6:85" ph="..." />
+            <marker date="1587913827314" expanded="true" signature="110:465" ph="{...}" />
+            <marker date="1587913827314" expanded="true" signature="146:463" ph="{...}" />
+            <marker date="1587913827314" expanded="true" signature="199:457" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SpeechServer1/Service.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="323">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <marker date="1586624303675" expanded="false" signature="6:151" ph="..." />
@@ -856,42 +869,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpeechServer1/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <marker date="1587913827314" expanded="true" signature="6:85" ph="..." />
-            <marker date="1587913827314" expanded="true" signature="110:465" ph="{...}" />
-            <marker date="1587913827314" expanded="true" signature="146:463" ph="{...}" />
-            <marker date="1587913827314" expanded="true" signature="199:457" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpeechServer1/Server.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="149" column="24" lean-forward="true" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+        <state relative-caret-position="1799">
+          <caret line="101" column="40" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
           <folding>
-            <marker date="1587921135021" expanded="true" signature="6:287" ph="..." />
-            <marker date="1587921135021" expanded="true" signature="312:5002" ph="{...}" />
-            <marker date="1587921135021" expanded="false" signature="341:1070" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="972:1064" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="1095:5000" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="1207:1323" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="1540:2400" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="1638:1696" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="2430:2577" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="2616:3103" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="2678:3093" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="2712:2947" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="2983:3079" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="3165:4916" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="3408:3661" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="3796:4846" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="4035:4132" ph="{...}" />
-            <marker date="1587921135021" expanded="true" signature="4944:4994" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="6:287" ph="..." />
+            <marker date="1587976139220" expanded="true" signature="312:5309" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="341:1070" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="972:1064" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="1095:5307" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="1207:1323" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="1540:2400" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="1638:1696" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="2430:2577" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="2616:3182" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="2678:3172" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="2777:2943" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="2979:3158" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="3244:5223" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="3487:3764" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="3904:5153" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="4118:4257" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="4318:4415" ph="{...}" />
+            <marker date="1587976139220" expanded="true" signature="5251:5301" ph="{...}" />
           </folding>
         </state>
       </provider>

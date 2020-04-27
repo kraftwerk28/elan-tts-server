@@ -87,9 +87,9 @@ namespace SpeechServer1
             _listener.Start();
             for (;;)
             {
+                var context = await _listener.GetContextAsync();
                 try
                 {
-                    var context = await _listener.GetContextAsync();
                     lock (_listener)
                     {
                         ProcessRequest(context);
@@ -97,7 +97,9 @@ namespace SpeechServer1
                 }
                 catch (Exception e)
                 {
-                    if (e is HttpListenerException) return;
+                    context.Response.StatusCode = 500;
+                    context.Response.Close();
+                    Console.WriteLine(e);
                 }
             }
         }
@@ -115,13 +117,20 @@ namespace SpeechServer1
                 var b = Encoding.UTF8.GetBytes("ok");
                 res.OutputStream.Write(b, 0, b.Length);
                 res.Close();
+                return;
             }
 
             if (req.HttpMethod.Equals("POST") && req.Url.AbsolutePath.Equals("/say") &&
-                req.Headers["Range"] == null)
+                     req.Headers["Range"] == null)
             {
                 var reader = new JsonTextReader(new StreamReader(req.InputStream));
                 var config = new JsonSerializer().Deserialize<ReqBody>(reader);
+                if (config == null)
+                {
+                    res.StatusCode = 400;
+                    res.Close();
+                    return;
+                }
 
                 if (!_voiceNames.ContainsKey(config.Voice))
                 {
@@ -144,9 +153,10 @@ namespace SpeechServer1
                 res.ContentLength64 = bytes.Length;
                 res.OutputStream.Write(bytes, 0, bytes.Length);
                 res.OutputStream.Close();
+                return;
             }
 
-            res.StatusCode = 200;
+            res.StatusCode = 204;
             res.Close();
         }
 
